@@ -23,19 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"_____-%@",[NSDate date]);
     [self action:nil];
-    
-    
 }
 
-- (void)configRealm{
 
-    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
-    config.schemaVersion = 5;
-    [RLMRealmConfiguration setDefaultConfiguration:config];
-}
 
 - (void)writData{
     
@@ -45,34 +36,36 @@
     Post *post = [[Post alloc] init];
     post.title = @"中国人";
     post.auther = user;
-    
-    
     SubUser *subUser = [[SubUser alloc] init];
     subUser.nickName = @"Mike";
-
-    [self configRealm];
-    
     RLMRealm * r = [RLMRealm defaultRealm];
     RLMRealmConfiguration * config = r.configuration;
     config.schemaVersion = 4;
     
+    
     [r transactionWithBlock:^{
-        
+  
+#pragma mark - 增
         [r addObject:user];
         [Post createInRealm:r withValue:@{@"identifer":time_stamp().stringValue,@"title":@"中国人"}];
         [r addObject:subUser];
+        
+ #pragma mark - 删
+        [r deleteObject:subUser];
+       // [r deleteAllObjects];
+        
+#pragma mark - 改
         post.timestamp = [NSDate date];
+        
     }];
-    
-    
 }
-
+#pragma mark - 查
 - (void)query{
 
-  NSLog(@"查询1： %@",[Post objectsWhere:@"title = '中国人'"]);
-    NSLog(@"查询w： %@",[Post objectsWithPredicate:[NSPredicate predicateWithFormat:@"title = '中国人' AND look = 0"]]);
-    
-    
+    RLMResults * result1 = [Post objectsWhere:@"title = '中国人'"];
+    RLMResults * result2 = [Post objectsWithPredicate:[NSPredicate predicateWithFormat:@"title = '中国人' AND look = 0"]];
+    NSLog(@"查询1： %@",result1);
+    NSLog(@"查询w： %@",result2);
     
 }
 
@@ -95,7 +88,7 @@
     if (self.userTextFeild.text.length>0) {
         manager.userName = self.userTextFeild.text;
     }
-    
+    // 配置数据库
     [RLMRealm reConfig];
     
     [self writData];

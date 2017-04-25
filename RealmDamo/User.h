@@ -13,7 +13,7 @@
 
 @property NSString *nickName;
 
-@property (readonly)RLMLinkingObjects *posts;
+@property (readonly)RLMLinkingObjects *posts;// 反向关系
 
 
 @end
