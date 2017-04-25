@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		098BBA503271AAF2119E5B7D /* libPods-RealmDamo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD13E5B17029E4BF38ADD8E7 /* libPods-RealmDamo.a */; };
+		6B5E1B7D1EADACC400C351A8 /* RLMObject+SetValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E1B7C1EADACC400C351A8 /* RLMObject+SetValue.m */; };
+		6B5E1B861EADBB0000C351A8 /* RLMRealm+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E1B851EADBB0000C351A8 /* RLMRealm+Custom.m */; };
+		6B5E1B891EADC0C900C351A8 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E1B881EADC0C900C351A8 /* UserManager.m */; };
+		6B8806F91EA9C2B30009E9E2 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8806F81EA9C2B30009E9E2 /* Post.m */; };
+		6B8806FC1EA9C3D50009E9E2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8806FB1EA9C3D50009E9E2 /* User.m */; };
+		6BE259C31EA8B3730041CAC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE259C21EA8B3730041CAC8 /* main.m */; };
+		6BE259C61EA8B3730041CAC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE259C51EA8B3730041CAC8 /* AppDelegate.m */; };
+		6BE259C91EA8B3730041CAC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE259C81EA8B3730041CAC8 /* ViewController.m */; };
+		6BE259CC1EA8B3730041CAC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE259CA1EA8B3730041CAC8 /* Main.storyboard */; };
+		6BE259CE1EA8B3730041CAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE259CD1EA8B3730041CAC8 /* Assets.xcassets */; };
+		6BE259D11EA8B3730041CAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE259CF1EA8B3730041CAC8 /* LaunchScreen.storyboard */; };
+		6BE259DC1EA8B3730041CAC8 /* RealmDamoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE259DB1EA8B3730041CAC8 /* RealmDamoTests.m */; };
+		6BE259E71EA8B3730041CAC8 /* RealmDamoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE259E61EA8B3730041CAC8 /* RealmDamoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BE259D81EA8B3730041CAC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BE259B61EA8B3720041CAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BE259BD1EA8B3730041CAC8;
+			remoteInfo = RealmDamo;
+		};
+		6BE259E31EA8B3730041CAC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BE259B61EA8B3720041CAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BE259BD1EA8B3730041CAC8;
+			remoteInfo = RealmDamo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26DCE9A0C54E7CAC07558CAC /* Pods-RealmDamo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDamo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDamo/Pods-RealmDamo.debug.xcconfig"; sourceTree = "<group>"; };
+		6B5E1B7B1EADACC400C351A8 /* RLMObject+SetValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+SetValue.h"; sourceTree = "<group>"; };
+		6B5E1B7C1EADACC400C351A8 /* RLMObject+SetValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+SetValue.m"; sourceTree = "<group>"; };
+		6B5E1B841EADBB0000C351A8 /* RLMRealm+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMRealm+Custom.h"; sourceTree = "<group>"; };
+		6B5E1B851EADBB0000C351A8 /* RLMRealm+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMRealm+Custom.m"; sourceTree = "<group>"; };
+		6B5E1B871EADC0C900C351A8 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		6B5E1B881EADC0C900C351A8 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		6B8806F71EA9C2B30009E9E2 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		6B8806F81EA9C2B30009E9E2 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		6B8806FA1EA9C3D50009E9E2 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		6B8806FB1EA9C3D50009E9E2 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		6BE259BE1EA8B3730041CAC8 /* RealmDamo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDamo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE259C21EA8B3730041CAC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BE259C41EA8B3730041CAC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BE259C51EA8B3730041CAC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BE259C71EA8B3730041CAC8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6BE259C81EA8B3730041CAC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BE259CB1EA8B3730041CAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BE259CD1EA8B3730041CAC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BE259D01EA8B3730041CAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BE259D21EA8B3730041CAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE259D71EA8B3730041CAC8 /* RealmDamoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmDamoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE259DB1EA8B3730041CAC8 /* RealmDamoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmDamoTests.m; sourceTree = "<group>"; };
+		6BE259DD1EA8B3730041CAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE259E21EA8B3730041CAC8 /* RealmDamoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmDamoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE259E61EA8B3730041CAC8 /* RealmDamoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmDamoUITests.m; sourceTree = "<group>"; };
+		6BE259E81EA8B3730041CAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FC39FCC6AC9B7D036C89A9 /* Pods-RealmDamo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDamo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDamo/Pods-RealmDamo.release.xcconfig"; sourceTree = "<group>"; };
+		AD13E5B17029E4BF38ADD8E7 /* libPods-RealmDamo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmDamo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BE259BB1EA8B3730041CAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098BBA503271AAF2119E5B7D /* libPods-RealmDamo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE259D41EA8B3730041CAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE259DF1EA8B3730041CAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C6BB14C8556F77B1B7CC0F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26DCE9A0C54E7CAC07558CAC /* Pods-RealmDamo.debug.xcconfig */,
+				94FC39FCC6AC9B7D036C89A9 /* Pods-RealmDamo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B729DBA1EAEF09E0054D6EC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6B5E1B7B1EADACC400C351A8 /* RLMObject+SetValue.h */,
+				6B5E1B7C1EADACC400C351A8 /* RLMObject+SetValue.m */,
+				6B5E1B841EADBB0000C351A8 /* RLMRealm+Custom.h */,
+				6B5E1B851EADBB0000C351A8 /* RLMRealm+Custom.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		6BE259B51EA8B3720041CAC8 = {
+			isa = PBXGroup;
+			children = (
+				6BE259C01EA8B3730041CAC8 /* RealmDamo */,
+				6BE259DA1EA8B3730041CAC8 /* RealmDamoTests */,
+				6BE259E51EA8B3730041CAC8 /* RealmDamoUITests */,
+				6BE259BF1EA8B3730041CAC8 /* Products */,
+				1C6BB14C8556F77B1B7CC0F5 /* Pods */,
+				7644A547EA6EC73B7D563074 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BE259BF1EA8B3730041CAC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BE259BE1EA8B3730041CAC8 /* RealmDamo.app */,
+				6BE259D71EA8B3730041CAC8 /* RealmDamoTests.xctest */,
+				6BE259E21EA8B3730041CAC8 /* RealmDamoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BE259C01EA8B3730041CAC8 /* RealmDamo */ = {
+			isa = PBXGroup;
+			children = (
+				6B729DBA1EAEF09E0054D6EC /* Category */,
+				6BE259F61EA8B78C0041CAC8 /* model */,
+				6BE259C41EA8B3730041CAC8 /* AppDelegate.h */,
+				6BE259C51EA8B3730041CAC8 /* AppDelegate.m */,
+				6BE259C71EA8B3730041CAC8 /* ViewController.h */,
+				6BE259C81EA8B3730041CAC8 /* ViewController.m */,
+				6BE259CA1EA8B3730041CAC8 /* Main.storyboard */,
+				6BE259CD1EA8B3730041CAC8 /* Assets.xcassets */,
+				6BE259CF1EA8B3730041CAC8 /* LaunchScreen.storyboard */,
+				6BE259D21EA8B3730041CAC8 /* Info.plist */,
+				6BE259C11EA8B3730041CAC8 /* Supporting Files */,
+			);
+			path = RealmDamo;
+			sourceTree = "<group>";
+		};
+		6BE259C11EA8B3730041CAC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BE259C21EA8B3730041CAC8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BE259DA1EA8B3730041CAC8 /* RealmDamoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE259DB1EA8B3730041CAC8 /* RealmDamoTests.m */,
+				6BE259DD1EA8B3730041CAC8 /* Info.plist */,
+			);
+			path = RealmDamoTests;
+			sourceTree = "<group>";
+		};
+		6BE259E51EA8B3730041CAC8 /* RealmDamoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE259E61EA8B3730041CAC8 /* RealmDamoUITests.m */,
+				6BE259E81EA8B3730041CAC8 /* Info.plist */,
+			);
+			path = RealmDamoUITests;
+			sourceTree = "<group>";
+		};
+		6BE259F61EA8B78C0041CAC8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6B8806F71EA9C2B30009E9E2 /* Post.h */,
+				6B8806F81EA9C2B30009E9E2 /* Post.m */,
+				6B8806FA1EA9C3D50009E9E2 /* User.h */,
+				6B8806FB1EA9C3D50009E9E2 /* User.m */,
+				6B5E1B871EADC0C900C351A8 /* UserManager.h */,
+				6B5E1B881EADC0C900C351A8 /* UserManager.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7644A547EA6EC73B7D563074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD13E5B17029E4BF38ADD8E7 /* libPods-RealmDamo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BE259BD1EA8B3730041CAC8 /* RealmDamo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE259EB1EA8B3730041CAC8 /* Build configuration list for PBXNativeTarget "RealmDamo" */;
+			buildPhases = (
+				18685013302316B8AA1D966E /* [CP] Check Pods Manifest.lock */,
+				6BE259BA1EA8B3730041CAC8 /* Sources */,
+				6BE259BB1EA8B3730041CAC8 /* Frameworks */,
+				6BE259BC1EA8B3730041CAC8 /* Resources */,
+				D4840E7A516707EA9A44C177 /* [CP] Embed Pods Frameworks */,
+				7BFF6EBF6BD30AFFBC82034E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmDamo;
+			productName = RealmDamo;
+			productReference = 6BE259BE1EA8B3730041CAC8 /* RealmDamo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BE259D61EA8B3730041CAC8 /* RealmDamoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE259EE1EA8B3730041CAC8 /* Build configuration list for PBXNativeTarget "RealmDamoTests" */;
+			buildPhases = (
+				6BE259D31EA8B3730041CAC8 /* Sources */,
+				6BE259D41EA8B3730041CAC8 /* Frameworks */,
+				6BE259D51EA8B3730041CAC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE259D91EA8B3730041CAC8 /* PBXTargetDependency */,
+			);
+			name = RealmDamoTests;
+			productName = RealmDamoTests;
+			productReference = 6BE259D71EA8B3730041CAC8 /* RealmDamoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BE259E11EA8B3730041CAC8 /* RealmDamoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE259F11EA8B3730041CAC8 /* Build configuration list for PBXNativeTarget "RealmDamoUITests" */;
+			buildPhases = (
+				6BE259DE1EA8B3730041CAC8 /* Sources */,
+				6BE259DF1EA8B3730041CAC8 /* Frameworks */,
+				6BE259E01EA8B3730041CAC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE259E41EA8B3730041CAC8 /* PBXTargetDependency */,
+			);
+			name = RealmDamoUITests;
+			productName = RealmDamoUITests;
+			productReference = 6BE259E21EA8B3730041CAC8 /* RealmDamoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BE259B61EA8B3720041CAC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					6BE259BD1EA8B3730041CAC8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					6BE259D61EA8B3730041CAC8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BE259BD1EA8B3730041CAC8;
+					};
+					6BE259E11EA8B3730041CAC8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BE259BD1EA8B3730041CAC8;
+					};
+				};
+			};
+			buildConfigurationList = 6BE259B91EA8B3720041CAC8 /* Build configuration list for PBXProject "RealmDamo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BE259B51EA8B3720041CAC8;
+			productRefGroup = 6BE259BF1EA8B3730041CAC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BE259BD1EA8B3730041CAC8 /* RealmDamo */,
+				6BE259D61EA8B3730041CAC8 /* RealmDamoTests */,
+				6BE259E11EA8B3730041CAC8 /* RealmDamoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BE259BC1EA8B3730041CAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE259D11EA8B3730041CAC8 /* LaunchScreen.storyboard in Resources */,
+				6BE259CE1EA8B3730041CAC8 /* Assets.xcassets in Resources */,
+				6BE259CC1EA8B3730041CAC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE259D51EA8B3730041CAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE259E01EA8B3730041CAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18685013302316B8AA1D966E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BFF6EBF6BD30AFFBC82034E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmDamo/Pods-RealmDamo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4840E7A516707EA9A44C177 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmDamo/Pods-RealmDamo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BE259BA1EA8B3730041CAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8806FC1EA9C3D50009E9E2 /* User.m in Sources */,
+				6BE259C91EA8B3730041CAC8 /* ViewController.m in Sources */,
+				6B5E1B891EADC0C900C351A8 /* UserManager.m in Sources */,
+				6B5E1B861EADBB0000C351A8 /* RLMRealm+Custom.m in Sources */,
+				6BE259C61EA8B3730041CAC8 /* AppDelegate.m in Sources */,
+				6BE259C31EA8B3730041CAC8 /* main.m in Sources */,
+				6B8806F91EA9C2B30009E9E2 /* Post.m in Sources */,
+				6B5E1B7D1EADACC400C351A8 /* RLMObject+SetValue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE259D31EA8B3730041CAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE259DC1EA8B3730041CAC8 /* RealmDamoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE259DE1EA8B3730041CAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE259E71EA8B3730041CAC8 /* RealmDamoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BE259D91EA8B3730041CAC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BE259BD1EA8B3730041CAC8 /* RealmDamo */;
+			targetProxy = 6BE259D81EA8B3730041CAC8 /* PBXContainerItemProxy */;
+		};
+		6BE259E41EA8B3730041CAC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BE259BD1EA8B3730041CAC8 /* RealmDamo */;
+			targetProxy = 6BE259E31EA8B3730041CAC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BE259CA1EA8B3730041CAC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE259CB1EA8B3730041CAC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BE259CF1EA8B3730041CAC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE259D01EA8B3730041CAC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BE259E91EA8B3730041CAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BE259EA1EA8B3730041CAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BE259EC1EA8B3730041CAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DCE9A0C54E7CAC07558CAC /* Pods-RealmDamo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RealmDamo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yun.RealmDamo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BE259ED1EA8B3730041CAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FC39FCC6AC9B7D036C89A9 /* Pods-RealmDamo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RealmDamo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yun.RealmDamo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BE259EF1EA8B3730041CAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RealmDamoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yun.RealmDamoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealmDamo.app/RealmDamo";
+			};
+			name = Debug;
+		};
+		6BE259F01EA8B3730041CAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RealmDamoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yun.RealmDamoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealmDamo.app/RealmDamo";
+			};
+			name = Release;
+		};
+		6BE259F21EA8B3730041CAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RealmDamoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yun.RealmDamoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RealmDamo;
+			};
+			name = Debug;
+		};
+		6BE259F31EA8B3730041CAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RealmDamoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yun.RealmDamoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RealmDamo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BE259B91EA8B3720041CAC8 /* Build configuration list for PBXProject "RealmDamo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE259E91EA8B3730041CAC8 /* Debug */,
+				6BE259EA1EA8B3730041CAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE259EB1EA8B3730041CAC8 /* Build configuration list for PBXNativeTarget "RealmDamo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE259EC1EA8B3730041CAC8 /* Debug */,
+				6BE259ED1EA8B3730041CAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE259EE1EA8B3730041CAC8 /* Build configuration list for PBXNativeTarget "RealmDamoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE259EF1EA8B3730041CAC8 /* Debug */,
+				6BE259F01EA8B3730041CAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE259F11EA8B3730041CAC8 /* Build configuration list for PBXNativeTarget "RealmDamoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE259F21EA8B3730041CAC8 /* Debug */,
+				6BE259F31EA8B3730041CAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BE259B61EA8B3720041CAC8 /* Project object */;
+}
